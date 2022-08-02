@@ -1,0 +1,15 @@
+<!doctype html>
+<html>
+   <body>
+   
+      result : {{ name }}
+      <br><br>
+      <form action = "{{ url_for('login') }} ">
+         <button type = submit>Logout</button>
+      </form>
+      
+      <br><br>
+      <a href = {{ url_for("list") }}>Click me to display details</a>
+      
+   </body>
+</html>

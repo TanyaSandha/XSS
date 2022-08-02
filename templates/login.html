@@ -1,0 +1,30 @@
+<html>
+	<head>
+		<title>Login to your account</title>
+	</head>
+	<body>
+		<h1>Login Page</h1>
+		<form action = "{{ url_for('login') }} " method = 'POST'>
+			<h2>Username</h2>
+			<input type ="text" name = "username" id = "username_input"/>
+			<br>
+			<h2>name</h2>
+			<input type ="text" name = "name"/>
+			<br><br>
+			<h2>Password</h2>
+			<input type ="text" name = "password"/>
+			<br><br>
+			<input type = "submit" name = "Login" value = "Login"/>
+		</form>
+		<form action = "{{ url_for('index') }}">
+			<h2>Or Just Enter ID to verify credentials:</h2>
+			<br>
+			<input type = "integer" id = "ID" name = "ID"/>
+			<br>
+			<input type = "submit" value = "Click Me!"/>
+
+		</form>
+		
+		<a href = {{ url_for("About") }}>New User? Click here to create account</a>
+	</body>
+</html>

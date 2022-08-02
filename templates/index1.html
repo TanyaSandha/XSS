@@ -1,0 +1,25 @@
+<html>
+	<head>
+		<title>Welcome</title>
+	</head>
+
+<body>
+	<form action ="{{ url_for('addrec') }}" method = "POST">
+
+	<label for="username">Enter Username:</label>
+	<input type = 'text' name = "username" id ='username'> <br><br>
+
+	<label for="name">Enter name</label>
+	<input type = 'text' name = 'name' id = 'name'> <br><br>
+
+	<label for="phone">Enter Password</label>
+	<input type = 'integer' min = '0' name = 'password' id = 'phone'> <br><br>
+
+	<input type = 'submit' id = 'greet' value = 'Press Enter to Signup'> 
+
+	</form>
+	<br>
+	<a href = "/">Already have an account? Click to Login</a>
+	
+</body>	
+</html>
